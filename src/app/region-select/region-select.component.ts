@@ -13,7 +13,17 @@ export class RegionSelectComponent {
   regionService = inject(RegionService)
 
   public getRegions() {
-    return ["Kanto", "Johto", "Sinnoh"];
+    return [
+      'Kanto',
+      'Johto',
+      'Hoenn',
+      'Sinnoh',
+      'Unys',
+      'Kalos',
+      'Alola',
+      'Galar',
+      'Paldea'
+    ];
   }
 
   public onRegionChange(event: Event): void {
