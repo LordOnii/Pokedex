@@ -1,6 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Pokemon } from './pokemon.interface';
+import { Observable, firstValueFrom } from 'rxjs';
 
 
 
@@ -36,7 +37,14 @@ export class PokemonService {
     return this.http.get<{ pokemon_species: { name: string, url: string }[] }>(url);
   }
 
-  getPokemonDetails(name: string) {
-    return this.http.get<Pokemon>(`${this.baseUrl}/pokemon/${name}`);
+  public async getPokemonDetails(name: string): Promise<(Pokemon | null)> {
+    const obs: Observable<Pokemon> = this.http.get<Pokemon>(`${this.baseUrl}/pokemon/${name}`);
+
+    return firstValueFrom(obs).catch((e) => {
+      console.error(`Unable to find pokemon info: ${name}`, e);
+      return null;
+    });
+
+    
   }
 }

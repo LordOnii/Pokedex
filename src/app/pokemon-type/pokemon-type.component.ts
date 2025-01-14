@@ -42,7 +42,6 @@ export class PokemonTypeComponent {
   }
 
   public getTextColor(): string {
-    console.log(this.defaultTextColor);
     return this.defaultTextColor;
   }
 }
