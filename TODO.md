@@ -1,0 +1,3 @@
+- [ ] find the wormadam bug (get species name and not pokemon name)
+- [ ] better generation mapping
+- [ ] 
