@@ -1,0 +1,16 @@
+<div class="pokemon-card">
+    <div class="pokemon-header">
+        <img [src]="pokemon.sprites.front_default" alt="bulbasaur">
+        <h3>
+            <span class="pokemon-id">{{ getFormattedId(pokemon.id) }}</span>
+            <span class="pokemon-name">{{ getFormattedName(pokemon.name) }}</span>
+        </h3>
+    </div>
+    <div class="pokemon-body">
+        <div class="types-container">
+            @for (type of pokemon.types; track type) {
+                <app-pokemon-type [type]="type.type.name"></app-pokemon-type>
+            }
+        </div>
+    </div>
+</div>

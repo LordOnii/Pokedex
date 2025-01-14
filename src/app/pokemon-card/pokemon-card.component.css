@@ -1,0 +1,54 @@
+.pokemon-card {
+font-family: Arial, sans-serif;
+border: 1px solid #ddd;
+padding: 16px;
+border-radius: 8px;
+width: 300px;
+margin: 0 auto;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+.pokemon-card {
+    width: calc(50% - 16px); /* 2 cards per row on smaller screens */
+}
+}
+
+@media (max-width: 480px) {
+.pokemon-card {
+    width: 100%; /* 1 card per row on very small screens */
+}
+}
+
+.pokemon-header img {
+display: block;
+margin: 0 auto;
+max-width: 100px;
+}
+
+.pokemon-header h3 {
+text-align: center;
+margin: 8px 0;
+}
+
+.pokemon-id {
+font-family: "WhiteRabbit";
+font-size: 24px;
+color: #444343;
+}
+
+.pokemon-name {
+font-family: "Monofonto"; /* Change this to the desired font */
+font-size: 19;
+color: #333;
+}
+
+.pokemon-body .types-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 8px; /* Adds spacing between types */
+margin-top: 16px;
+}

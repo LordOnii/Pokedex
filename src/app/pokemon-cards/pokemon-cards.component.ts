@@ -5,11 +5,12 @@ import { PokemonService } from '../pokemon.service';
 import { CommonModule } from '@angular/common';
 import { firstValueFrom } from 'rxjs/internal/firstValueFrom';
 import { PokemonTypeComponent } from '../pokemon-type/pokemon-type.component';
+import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
 
 @Component({
   selector: 'app-pokemon-cards',
   standalone: true,
-  imports: [CommonModule, PokemonTypeComponent],
+  imports: [CommonModule, PokemonCardComponent],
   templateUrl: './pokemon-cards.component.html',
   styleUrl: './pokemon-cards.component.css'
 })

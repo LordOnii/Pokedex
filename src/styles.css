@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: 'Monofonto';
-    src: url('./assets/monofonto/monofonto.ttf');
+    src: url('./assets/fonts/monofonto/monofonto.ttf');
+}
+
+@font-face {
+    font-family: 'WhiteRabbit';
+    src: url('./assets/fonts//white_rabbit/whitrabt.ttf');
 }
