@@ -1,0 +1,17 @@
+<div class="pokemon-grid">
+    @if (pokemonList$().length > 0) {
+      @for (pokemon of pokemonList$(); track pokemon.id) {
+        <div class="pokemon-card">
+          <img [src]="pokemon.sprites.front_default" [alt]="pokemon.name">
+          <h3>{{ pokemon.name | titlecase }}</h3>
+          <div class="types">
+            @for (type of pokemon.types; track type) {
+              <app-pokemon-type [type]="type.type.name"></app-pokemon-type>
+            }
+          </div>
+        </div>
+      }
+    } @else {
+      <p>Loading Pokémon...</p>
+    }
+  </div>

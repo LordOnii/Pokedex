@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { RegionSelectComponent } from "./region-select/region-select.component";
+import { PokemonCardsComponent } from "./pokemon-cards/pokemon-cards.component";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [
+    RouterOutlet, 
+    RegionSelectComponent, 
+    PokemonCardsComponent
+  ],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.css",
 })
-export class AppComponent {
-  title = 'pokedex';
-}
+export class AppComponent {}

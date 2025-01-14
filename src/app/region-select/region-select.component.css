@@ -1,0 +1,61 @@
+/* Navigation bar style from image */
+nav {
+    background-color: #ff4d4d;
+    padding: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Region selector styles */
+  h1 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  select {
+    padding: 0.75rem 2rem 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ff4d4d;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ff4d4d' d='M6 9L0 3h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    transition: all 0.2s ease;
+  }
+  
+  select:hover {
+    border-color: #ff6666;
+    box-shadow: 0 2px 8px rgba(255, 77, 77, 0.2);
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #ff6666;
+    box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.3);
+  }
+  
+  /* Style for the options */
+  option {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }

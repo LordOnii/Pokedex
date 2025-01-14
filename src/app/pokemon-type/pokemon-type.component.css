@@ -1,0 +1,11 @@
+.type {
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    margin-right: 0.2em;
+    display: inline-block;
+}
+
+.type {
+    font-family: "Monofonto";
+}
